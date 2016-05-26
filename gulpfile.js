@@ -108,4 +108,5 @@ gulp.task('cssBuild', function() {
   .pipe(sass())
   .pipe(sourcemaps.write())
   .pipe(gulp.dest('./build/css'));
+  .pipe(browserSync.stream());
 });
